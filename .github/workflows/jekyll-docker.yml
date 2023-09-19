@@ -36,10 +36,10 @@ jobs:
 
     - name: Build and tag Docker image
       run: |
-        docker build . -t zayarlinnnaung/eureka-server
+        docker build . -t zayarlinnnaung/mail-sender-service
       env:
         DOCKER_BUILDKIT: 1
 
     - name: Push Docker image
       run: |
-        docker push zayarlinnnaung/eureka-server:latest
+        docker push zayarlinnnaung/mail-sender-service:latest
